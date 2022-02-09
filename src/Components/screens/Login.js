@@ -25,7 +25,7 @@ const Login = () => {
     const getToken = async() => {
 
         try {
-            let res = await axios.post("https://getfit-app.herokuapp.com/auth/",{
+            let res = await axios.post("https://getfit-app.herokuapp.com/",{
                 email:email,
                 password:password
             });
@@ -52,7 +52,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            let res = await axios.post("https://getfit-app.herokuapp.com/auth/new",{
+            let res = await axios.post("https://getfit-app.herokuapp.com/new",{
                 email:email,
                 password:password
             });  
